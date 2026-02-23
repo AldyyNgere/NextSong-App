@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextSong</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Rethink Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-[#0F172A] via-[#1E1B4B] to-[#111827] text-white"
+  >
+    <!-- Navbar -->
+    <nav
+      class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-6"
+    >
+      <h1 class="text-xl sm:text-2xl font-bold tracking-tight">NextSong</h1>
+      <a
+        href="/app.html"
+        class="bg-indigo-500 hover:bg-indigo-600 transition px-5 py-2 rounded-full text-sm font-medium"
+      >
+        Open App
+      </a>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-28 text-center"
+    >
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        Discover Your
+        <span class="text-indigo-400">Next Song</span>
+      </h2>
+
+      <p class="text-gray-400 text-base sm:text-lg mt-6 max-w-2xl mx-auto">
+        Web app minimalis untuk menentukan lagu secara random dan bikin
+        tongkrongan kamu makin hidup.
+      </p>
+
+      <a
+        href="/app.html"
+        class="inline-block mt-10 bg-indigo-500 hover:bg-indigo-600 transition px-8 py-4 rounded-full text-base sm:text-lg font-semibold shadow-lg"
+      >
+        🎵 Start Now
+      </a>
+    </section>
+
+    <!-- Features -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/5 p-6 sm:p-8 rounded-3xl">
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">Instant Random</h3>
+          <p class="text-gray-400 text-sm sm:text-base">
+            Satu klik langsung dapat lagu.
+          </p>
+        </div>
+
+        <div class="bg-white/5 p-6 sm:p-8 rounded-3xl">
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">Genre Filter</h3>
+          <p class="text-gray-400 text-sm sm:text-base">
+            Pilih lagu sesuai mood kamu.
+          </p>
+        </div>
+
+        <div class="bg-white/5 p-6 sm:p-8 rounded-3xl">
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">
+            Tongkrongan Ready
+          </h3>
+          <p class="text-gray-400 text-sm sm:text-base">
+            Tidak perlu debat lagu lagi.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
