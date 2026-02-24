@@ -23,3 +23,5 @@ const connection = mysql.createPool({
 });
 
 module.exports = connection.promise();
+
+console.log("MYSQL_URL:", process.env.MYSQL_URL);
