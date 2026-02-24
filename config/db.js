@@ -12,7 +12,7 @@
 // });
 
 // module.exports = pool;
-
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
 const mysql = require("mysql2");
 
 const connection = mysql.createPool({
