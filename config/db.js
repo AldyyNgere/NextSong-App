@@ -21,6 +21,9 @@ const connection = mysql.createPool({
   password: process.env.MYSQLPASSWORD,
   database: process.env.MYSQLDATABASE,
   port: process.env.MYSQLPORT,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 module.exports = connection.promise();
