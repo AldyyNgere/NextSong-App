@@ -57,7 +57,7 @@ WHERE songs.is_active = TRUE
 
     res.json(song[0]);
   } catch (error) {
-    console.error(error);
+    console.error("SQL ERROR:", error);
     res.status(500).json({message: "Server error"});
   }
 });
@@ -67,7 +67,7 @@ router.get("/genres", async (req, res) => {
     const [genres] = await db.query("SELECT * FROM genres");
     res.json(genres);
   } catch (error) {
-    console.error(error);
+    console.error("SQL ERROR:", error);
     res.status(500).json({message: "Server error"});
   }
 });
